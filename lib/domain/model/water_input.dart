@@ -23,7 +23,7 @@ class _Small extends WaterInput {
       : super(
           milliliters: 180,
           icon: AppSymbols.coffee_cup,
-          backgroundColor: Color(0xFFF1EEFF),
+          backgroundColor: Color(0xFFCAACE9),
         );
 }
 
@@ -32,7 +32,7 @@ class _Regular extends WaterInput {
       : super(
           milliliters: 250,
           icon: AppSymbols.water_glass,
-          backgroundColor: Color(0xFFF8F8F6),
+          backgroundColor: Color.fromARGB(255, 193, 151, 235),
         );
 }
 
@@ -41,7 +41,7 @@ class _Medium extends WaterInput {
       : super(
           milliliters: 500,
           icon: AppSymbols.water,
-          backgroundColor: Color(0xFFFFFAEC),
+          backgroundColor: Color.fromARGB(255, 184, 135, 233),
         );
 }
 
@@ -50,6 +50,6 @@ class _Large extends WaterInput {
       : super(
           milliliters: 750,
           icon: AppSymbols.jug,
-          backgroundColor: Color(0xFFFBE9E3),
+          backgroundColor: Color.fromARGB(255, 178, 119, 236),
         );
 }

@@ -1,4 +1,4 @@
-package com.fabirt.waterreminder
+package com.beyzayuksel.waterreminder
 
 
 import android.content.Context

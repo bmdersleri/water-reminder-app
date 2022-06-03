@@ -15,7 +15,7 @@ class _ConsumptionDialogState extends State<ConsumptionDialog> {
 
   String? _validateText(String? value) {
     if (value == null) {
-      return "2000 ml minimun";
+      return "2000 ml minimum";
     }
 
     final number = int.tryParse(value);
@@ -23,7 +23,7 @@ class _ConsumptionDialogState extends State<ConsumptionDialog> {
       return null;
     }
 
-    return "2000 ml minimun";
+    return "2000 ml minimum";
   }
 
   @override
@@ -31,7 +31,7 @@ class _ConsumptionDialogState extends State<ConsumptionDialog> {
     final bloc = context.watch<WaterBloc>();
     return AlertDialog(
       title: Text(
-        "Daily consumption",
+        "Günlük tüketim",
         textAlign: TextAlign.center,
         style: TextStyle(fontWeight: FontWeight.bold),
       ),
@@ -43,7 +43,7 @@ class _ConsumptionDialogState extends State<ConsumptionDialog> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "Change your daily water consumption goal, in milliliters.",
+              "Günlük su tüketimi hedefinizi mililitre olarak değiştirin.",
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 12),
@@ -71,12 +71,12 @@ class _ConsumptionDialogState extends State<ConsumptionDialog> {
                   Navigator.of(context).pop();
                 }
               },
-              title: "Confirm",
+              title: "Onayla",
             ),
             SizedBox(height: 10),
             SecondaryButton(
               onPressed: () => Navigator.of(context).pop(),
-              title: "Cancel",
+              title: "İptal et",
             ),
           ],
         ),

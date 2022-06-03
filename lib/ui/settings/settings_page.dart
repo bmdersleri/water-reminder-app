@@ -20,7 +20,7 @@ class SettingsPage extends StatelessWidget {
             children: [
               SizedBox(width: double.infinity),
               Text(
-                "Settings",
+                "Ayarlar",
                 style: theme.textTheme.headline4,
               ),
               SizedBox(height: 32),
@@ -29,7 +29,7 @@ class SettingsPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Text("Reminders"),
+                      child: Text("Hatırlatıcılar"),
                     ),
                     RollingSwitchButton(
                       value: bloc.state.alarmEnabled,
@@ -52,7 +52,7 @@ class SettingsPage extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          "Daily consumption",
+                          "Günlük tüketim",
                           style: theme.textTheme.bodyText2,
                         ),
                       ),
@@ -79,7 +79,7 @@ class SettingsPage extends StatelessWidget {
                     child: Padding(
                       padding: EdgeInsets.symmetric(vertical: 8),
                       child: Text(
-                        "Hard Reset",
+                        "Verileri Sıfırla",
                         style: theme.textTheme.bodyText2?.copyWith(
                           color: theme.errorColor,
                         ),
@@ -87,6 +87,33 @@ class SettingsPage extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 100.0),
+                child: Text(
+                  "Hakkımda",
+                  style: theme.textTheme.headline4,
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Yazılımcı:",
+                    style: TextStyle(color: Color(0xFF5B1C85)),
+                  ),
+                  Text(" Beyza Nur Yüksel")
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "E-posta:",
+                    style: TextStyle(color: Color(0xFF5B1C85)),
+                  ),
+                  Text(" beyzayuksel0111@gmail.com")
+                ],
               ),
               Spacer(),
             ],
@@ -99,9 +126,9 @@ class SettingsPage extends StatelessWidget {
   Future<void> clearDataStore(BuildContext context) async {
     final confirmed = await showConfirmationDialog(
       context,
-      title: "Hard Reset",
+      title: "Verileri Sıfırla",
       content:
-          "You are about to reset all the application data. This action cannot be undone.",
+          "Tüm uygulama verilerini sıfırlamak üzeresiniz. Bu işlem geri alınamaz.",
     );
     if (confirmed) {
       context.read<WaterBloc>().clearDataStore();

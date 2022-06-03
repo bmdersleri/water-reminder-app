@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_title"
         tools:text="Remaining 2000 ml" />
 
-    <com.fabirt.waterreminder.WaterView
+    <com.beyzayuksel.waterreminder.WaterView
         android:id="@+id/view_water"
         android:layout_width="0dp"
         android:layout_height="0dp"

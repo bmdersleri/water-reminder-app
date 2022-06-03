@@ -27,19 +27,20 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
     defaultConfig {
-        applicationId "com.fabirt.waterreminder"
+        applicationId "com.beyzayuksel.waterreminder"
         minSdkVersion 26
         targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()

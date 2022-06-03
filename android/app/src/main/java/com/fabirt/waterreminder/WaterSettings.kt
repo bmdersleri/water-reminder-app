@@ -1,4 +1,4 @@
-package com.fabirt.waterreminder
+package com.beyzayuksel.waterreminder
 
 data class WaterSettings(
         val currentMilliliters: Int,

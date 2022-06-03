@@ -1,4 +1,4 @@
-package com.fabirt.waterreminder
+package com.beyzayuksel.waterreminder
 
 import android.app.Notification
 import android.app.PendingIntent
@@ -40,8 +40,8 @@ class WaterAlarmService : Service() {
     }
 
     companion object {
-        const val ACTION_START_ALARM_SERVICE = "com.fabirt.waterreminder.ACTION_START_ALARM_SERVICE"
-        const val ACTION_STOP_ALARM_SERVICE = "com.fabirt.waterreminder.ACTION_STOP_ALARM_SERVICE"
+        const val ACTION_START_ALARM_SERVICE = "com.beyzayuksel.waterreminder.ACTION_START_ALARM_SERVICE"
+        const val ACTION_STOP_ALARM_SERVICE = "com.beyzayuksel.waterreminder.ACTION_STOP_ALARM_SERVICE"
         const val ALARM_NOTIFICATION_ID = 1
 
         fun displayFullScreenNotification(context: Context, contentText: String) {

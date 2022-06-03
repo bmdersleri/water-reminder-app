@@ -1,4 +1,4 @@
-package com.fabirt.waterreminder
+package com.beyzayuksel.waterreminder
 
 object K {
 
@@ -10,7 +10,7 @@ object K {
 
     const val ALARM_CHANNEL_DESCRIPTION = "Daily water reminders"
 
-    const val METHOD_CHANNEL_NAME = "com.fabirt.waterreminder/channel"
+    const val METHOD_CHANNEL_NAME = "com.beyzayuksel.waterreminder/channel"
 
     const val METHOD_DRINK_WATER = "METHOD_DRINK_WATER"
 

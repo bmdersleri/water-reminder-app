@@ -38,7 +38,7 @@ class _AppState extends State<App> {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Water Reminder',
+        title: 'Su Hatırlatıcı',
         theme: AppTheme.light,
         home: AnnotatedRegion(
           value: SystemUiOverlayStyle(

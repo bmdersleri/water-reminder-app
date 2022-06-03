@@ -1,5 +1,5 @@
 abstract class Constant {
-  static const platformChannelName = "com.fabirt.waterreminder/channel";
+  static const platformChannelName = "com.beyzayuksel.waterreminder/channel";
 
   static const methodDrinkWater = "METHOD_DRINK_WATER";
 

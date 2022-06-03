@@ -34,9 +34,9 @@ class ConfirmationDialog extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 24),
-          PrimaryButton(onPressed: onConfirm, title: "Confirm"),
+          PrimaryButton(onPressed: onConfirm, title: "Onayla"),
           SizedBox(height: 10),
-          SecondaryButton(onPressed: onCancel, title: "Cancel"),
+          SecondaryButton(onPressed: onCancel, title: "İptal et"),
         ],
       ),
     );
